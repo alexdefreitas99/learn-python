@@ -15,9 +15,6 @@ def nr(x0, TOL, N):
         x1 = x0 - funcao(x0) / derivada(x0)
         i = i + i
         if i > N:
-            print("Não houv convergência!")
+            print("Não houve convergência!")
         if abs(funcao(x1)) < TOL:
             return x1
-
-
-nr(0, 10, 20)
