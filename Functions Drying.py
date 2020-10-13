@@ -1,7 +1,7 @@
 from __future__ import division
 
 
-def funcao(x0): return x0**4 - 3*x0**3 + 3
+def funcao(x): return x**x-8
 
 
 def nr(x0, x1, TOL, N):
@@ -20,4 +20,4 @@ def nr(x0, x1, TOL, N):
             return x2
 
 
-print(nr(-1.8, -1.2, 0.1, 50000))
+print(nr(2, 1, 0.01, 50000))

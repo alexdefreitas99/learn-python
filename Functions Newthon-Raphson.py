@@ -4,7 +4,8 @@ from __future__ import division
 def derivada(x0): return 3 * x0 ** 2 - 9
 
 
-def funcao(x0): return x0 ** 3 - 9 * x0 + 3
+# def funcao(x0): return x0 ** 3 - 9 * x0 + 3
+def funcao(x0): return x0**4 - 3 * x0**3 + 3
 
 
 def nr(x0, TOL, N):

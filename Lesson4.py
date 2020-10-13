@@ -1,0 +1,27 @@
+import numpy as np
+
+# M = np.array([[1, 1, 1, 7], [2, 3, -1, 4], [3, -1, 2, 9]])
+# print(M)
+# print('')
+# print("Operações entre as equações")
+# N = np.array([[1, 1, 1, 7], [0, 1, -3, 10], [0, 0, -13, -52]])
+# print(N)
+# print('')
+
+print('Sistema a ser resolvido pela decomposição LU')
+print('')
+
+M = np.array([[1, 1, 1, 7], [2, 3, -1, 4], [3, -1, 2, 9]])
+print(M)
+print('')
+print('Matriz U = decomposição Gauss')
+U = np.array([[1, 1, 1], [0, 1, -3], [0, 0, -13]])
+print(U)
+print('')
+print('Matriz L')
+L = np.array([[1, 0, 0], [2, 1, 0], [3, -4, 1]])
+print(L)
+print('')
+A = L.dot(U)
+print('A = L.U')
+print(A)
